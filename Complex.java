@@ -14,8 +14,7 @@ public class Complex {
     public void setB(double b) {
         this.b = b;
     }
-    public Complex(double x,double y)
-    {
+    public Complex(double x,double y){
         this.a=x;
         this.b=y;
     }
@@ -24,14 +23,12 @@ public class Complex {
         Complex add=new Complex(this.a+c.a, this.b+c.b);
         return add;
     }
-    public Complex sub(Complex c)
-    {
+    public Complex sub(Complex c){
         Complex sub=new Complex(this.a-c.a, this.b-c.b);
         return sub;
     }
     
-    public String toString()
-    {
+    public String toString(){
         if(this.b<0)
             return this.a+"-"+(-this.b)+"i";
         return this.a+"+"+this.b+"i";
@@ -51,6 +48,6 @@ public class Complex {
         System.out.println("c1和c2的运算结果：");
         System.out.println("c1+c2="+c1.Add(c2));
         System.out.println("c1-c2="+c1.sub(c2));
+        in.close();
     }
-
 }

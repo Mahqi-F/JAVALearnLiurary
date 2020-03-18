@@ -1,0 +1,1 @@
+javac -encoding utf-8 Baby2.java
